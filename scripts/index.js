@@ -22,3 +22,9 @@ const ramens = [
     image: "tonkotsu.jpg",
   },
 ];
+
+// displaying ramens in the ramens menu
+
+const displayRamen = () => {
+  let section = document.getElementById("ramen-menu");
+};
