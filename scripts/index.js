@@ -29,7 +29,7 @@ const displayRamen = () => {
   let section = document.getElementById("ramen-menu");
 
   ramens.forEach((ramen) => {
-    section.innerHTML = `
+    section.innerHTML += `
     <div id="ramen-detail">
       <img
         src="https://i.pinimg.com/736x/96/a6/bc/96a6bc6d0e04a922c5629b50d3a0bf08.jpg"
