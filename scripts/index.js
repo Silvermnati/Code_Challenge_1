@@ -27,4 +27,6 @@ const ramens = [
 
 const displayRamen = () => {
   let section = document.getElementById("ramen-menu");
+
+  
 };
