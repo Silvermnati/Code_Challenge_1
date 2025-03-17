@@ -28,5 +28,23 @@ const ramens = [
 const displayRamen = () => {
   let section = document.getElementById("ramen-menu");
 
-  
+  ramens.forEach((ramen) => {
+    section.innerHTML = `
+    <div id="ramen-detail">
+      <img
+        src="https://i.pinimg.com/736x/96/a6/bc/96a6bc6d0e04a922c5629b50d3a0bf08.jpg"
+        alt="portrait"
+      />
+    </div>
+  `;
+  });
+
+  console.log("this is my section", section);
+ 
 };
+
+const handleClick = () => {
+  
+}
+
+displayRamen();
