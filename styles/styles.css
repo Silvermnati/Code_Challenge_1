@@ -10,3 +10,18 @@
   text-align: center;
   justify-content: center;
 }
+
+#ramen-menu{
+  display: flex;
+  justify-content: center;
+ gap:10px;
+}
+#ramen-menu img {
+  width:150px;
+  height:150px;
+  object-fit: cover;
+  border-radius: 8px;
+ margin-top: 20px;
+
+}
+  
