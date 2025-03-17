@@ -40,16 +40,16 @@ const displayRamen = () => {
   });
 
   console.log("this is my section", section);
- 
 };
 
-const handleClick= () => {
+const handleClick = () => {
   // get the details of the ramen and display it in the ramen-detail section
 };
 
 const createNewRamen = () => {
   name = document.getElementById("name").value;
-  restaurant = document.getElementById("restaurant").value = document.getElementById("image").value;
+  restaurant = document.getElementById("restaurant").value =
+    document.getElementById("image").value;
   image = document.getElementById("image").value;
   rating = document.getElementById("rating").value;
   comment = document.getElementById("comment").value;
@@ -61,19 +61,18 @@ const createNewRamen = () => {
     image: image,
     rating: rating,
     comment: comment,
-  }
+  };
 
   ramens.push(newRamen);
 
   onload(() => {
     displayRamen();
-  })
+  });
 };
 const ramenDetails = document.getElementById("ramen-detail");
 
-
 ramenDetails.addEventListener(`click`, () => {
-handleClick();
+  handleClick();
 });
 
 displayRamen();
