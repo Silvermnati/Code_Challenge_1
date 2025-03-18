@@ -28,21 +28,24 @@ const ramens = [
 const displayRamen = () => {
   let section = document.getElementById("ramen-menu");
 
-  ramens.forEach((ramen) => {
-    section.innerHTML += `
-    <div id="ramen-detail">
-      <img
-        src="https://i.pinimg.com/736x/96/a6/bc/96a6bc6d0e04a922c5629b50d3a0bf08.jpg"
-        alt="portrait"
-      />
-    </div>
-  `;
-  });
+    ramens.forEach((ramen) => {
+      let img = document.createElement("img");
+      img.src = ramen.image;
+      img.alt = ramen.name;
+      img.style.cursor = "pointer";
+
+      img.addEventListener("click", () => showRamenDetails(ramen));
+      section.appendChild(img);
+    });
 
   console.log("this is my section", section);
 };
 
 const handleClick = () => {
+  // get the details of the ramen and display it in the ramen-detail section
+};
+
+const showRamenDetails = (ramen) => {
   // get the details of the ramen and display it in the ramen-detail section
 };
 
